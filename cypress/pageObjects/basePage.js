@@ -17,11 +17,11 @@ class BasePage {
       if (Cypress.currentTest.state === 'failed') {
         cy.screenshot()
       }
-      cy.log('Test Finished...')
+      cy.log('Test Finished....')
     })
 
     after(() => {
-      cy.log('Test Suite Finished...')
+      cy.log('Test Suite Finished....')
     })
   }
 
@@ -38,7 +38,7 @@ class BasePage {
   }
 
   validateText(selector, text) {
-    this.getElement(selector).should('contain.text', text)
+    this.getElement(selector).should('contain.text ', text)
   }
 }
 

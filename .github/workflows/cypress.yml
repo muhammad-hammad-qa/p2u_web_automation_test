@@ -1,6 +1,6 @@
 name: Run Cypress Tests
 
-# ✅ This section tells GitHub when to run the workflow
+# This section tells GitHub when to run the workflow
 on:
   push:
     branches:
